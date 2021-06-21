@@ -1,0 +1,151 @@
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: 'Poppins', sans-serif;
+			background-color: #DF0101;
+	       	background-image: url("../img/bg1.jpg");
+	        background-repeat: no-repeat;
+	        background-attachment: fixed;  
+	        background-size: cover;
+	        padding: 30px;
+		}
+		
+		.container{			
+			background-color: /*#FF8000*/ rgba(255,182,0,0.8);
+			border-radius: 15px;			
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;			
+			width: 100%;
+			max-width: 800px;
+			padding: 80px;
+			margin-left: auto;
+			margin-right: auto;	
+		}
+		.menu{
+
+		}			
+		.menu h1{
+			background-color: #DF0101;
+			border-radius: 20px;
+			color: #fff;
+			padding: 5px 15px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.menu p{
+			font-size: 1.9em;
+			text-align: center;			
+		}
+		.menu select{
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			padding: 5px 20px;
+			border-radius: 15px;
+			border: 1px solid #DF0101;					
+		}	
+		#pedido{
+			display: flex;	
+			flex-direction: row;			
+			justify-content: space-between;	
+			justify-content: center;
+			align-items: center;			
+		}
+		#Pedido img{		
+			width: 500px;
+		}
+		#Pedido h1{
+			background-color: #DF0101;
+			border-radius: 20px;
+			color: #fff;
+			padding: 5px 15px;
+			margin-left: auto;
+			margin-right: auto;
+			display: inline-block;
+			text-align: center;
+		}
+		#pedido p{					
+			font-size: 1.5em;
+		}
+		#Pedido a{			
+			background-color: #3BD456;
+			text-decoration: none;
+			border-radius: 20px;
+			color: #fff;
+			display: inline-block;	
+			padding: 5px 15px;			
+		}
+
+		@media (min-width: 1200px){
+			.container{
+				width: 960px;
+			}
+		}
+		
+		@media (min-width: 992px) and (max-width: 1199.98px){		
+			.container{
+				max-width: 700px;
+			}
+			#Pedido img{		
+				width: 300px;
+			}
+		}
+
+		@media (min-width: 768px) and  (max-width: 991.98px ){
+			.container{
+			 	max-width: 500px;			
+			}
+			#Pedido img{		
+				width: 300px;
+			}
+			#pedido h1{
+				font-size: 1.5em;
+			}
+		}
+
+		@media (min-width: 591px) and (max-width: 767.98px){
+			.container{
+				max-width: 500px;
+			}
+			#Pedido img{		
+				width: 400px;
+			}
+			#pedido h1{
+				font-size: 1.5em;
+			}
+		}
+		@media (min-width: 360px) and (max-width: 590px) {
+			.container{
+				max-width: 150px;
+			}
+			#pedido{		
+				width: 300px;
+				flex-direction: column;	
+			}
+			#pedido h1{
+				text-align: center;
+				margin-left: 30px;
+			}
+			#pedido a{
+				margin-left: 50px;
+			}			
+			#pedido img{
+				width: 300px;
+			}
+		}
+		@media (min-width: 250px) and (max-width: 359px){
+			.container{
+				max-width: 80px;
+			}
+			#pedido{		
+				width: 100px;
+				flex-direction: column;	
+			}
+			#pedido img{
+				width: 300px;
+			}
+		}
+		}
