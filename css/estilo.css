@@ -1,151 +1,97 @@
-		body{
-			margin: 0;
-			padding: 0;
-			font-family: 'Poppins', sans-serif;
-			background-color: #DF0101;
-	       	background-image: url("../img/bg1.jpg");
-	        background-repeat: no-repeat;
-	        background-attachment: fixed;  
-	        background-size: cover;
-	        padding: 30px;
-		}
-		
-		.container{			
-			background-color: /*#FF8000*/ rgba(255,182,0,0.8);
-			border-radius: 15px;			
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;			
-			width: 100%;
-			max-width: 800px;
-			padding: 80px;
-			margin-left: auto;
-			margin-right: auto;	
-		}
-		.menu{
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../img/bg1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
-		}			
-		.menu h1{
-			background-color: #DF0101;
-			border-radius: 20px;
-			color: #fff;
-			padding: 5px 15px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.menu p{
-			font-size: 1.9em;
-			text-align: center;			
-		}
-		.menu select{
-			display: flex;
-			text-align: center;
-			justify-content: center;
-			align-items: center;
-			padding: 5px 20px;
-			border-radius: 15px;
-			border: 1px solid #DF0101;					
-		}	
-		#pedido{
-			display: flex;	
-			flex-direction: row;			
-			justify-content: space-between;	
-			justify-content: center;
-			align-items: center;			
-		}
-		#Pedido img{		
-			width: 500px;
-		}
-		#Pedido h1{
-			background-color: #DF0101;
-			border-radius: 20px;
-			color: #fff;
-			padding: 5px 15px;
-			margin-left: auto;
-			margin-right: auto;
-			display: inline-block;
-			text-align: center;
-		}
-		#pedido p{					
-			font-size: 1.5em;
-		}
-		#Pedido a{			
-			background-color: #3BD456;
-			text-decoration: none;
-			border-radius: 20px;
-			color: #fff;
-			display: inline-block;	
-			padding: 5px 15px;			
-		}
+.container {
+    background-color: rgba(255, 182, 0, 0.8);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-		@media (min-width: 1200px){
-			.container{
-				width: 960px;
-			}
-		}
-		
-		@media (min-width: 992px) and (max-width: 1199.98px){		
-			.container{
-				max-width: 700px;
-			}
-			#Pedido img{		
-				width: 300px;
-			}
-		}
+.active {
+    display: none;
+}
 
-		@media (min-width: 768px) and  (max-width: 991.98px ){
-			.container{
-			 	max-width: 500px;			
-			}
-			#Pedido img{		
-				width: 300px;
-			}
-			#pedido h1{
-				font-size: 1.5em;
-			}
-		}
+h1 {
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 30px;
+    background-color: #DF0101;
+}
 
-		@media (min-width: 591px) and (max-width: 767.98px){
-			.container{
-				max-width: 500px;
-			}
-			#Pedido img{		
-				width: 400px;
-			}
-			#pedido h1{
-				font-size: 1.5em;
-			}
-		}
-		@media (min-width: 360px) and (max-width: 590px) {
-			.container{
-				max-width: 150px;
-			}
-			#pedido{		
-				width: 300px;
-				flex-direction: column;	
-			}
-			#pedido h1{
-				text-align: center;
-				margin-left: 30px;
-			}
-			#pedido a{
-				margin-left: 50px;
-			}			
-			#pedido img{
-				width: 300px;
-			}
-		}
-		@media (min-width: 250px) and (max-width: 359px){
-			.container{
-				max-width: 80px;
-			}
-			#pedido{		
-				width: 100px;
-				flex-direction: column;	
-			}
-			#pedido img{
-				width: 300px;
-			}
-		}
-		}
+p {
+    font-size: 1.9em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.menu select {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 54px 10px 0;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid #DF0101;
+    cursor: pointer;
+}
+
+.Pedido {
+    margin-top: 30px;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: block;
+}
+
+span {
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: #DF0101;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: auto;
+    font-size: 25px;
+}
+
+button {
+    background-color: #51bd63;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-weight: bold;
+    margin: auto;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    button {
+        margin-top: 25px
+    }
+    .container {
+        border-radius: 0;
+    }
+}

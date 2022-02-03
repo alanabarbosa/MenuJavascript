@@ -1,30 +1,85 @@
 <html>
+
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cardápio JavaScript</title>
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
+
 <body>
-	
-	<div class="container">
-		<div class="menu">		
-		<h1>Cardápio JavaScript</h1>
-		<p>Escolha seu Pedido</p>			
-		<select class="select" name="" onchange="funcaoChance(this)">
-			<option value="0">Selecione seu pedido</option>
-			<option value="1">Tradicional</option>
-			<option value="2">x-Bacon</option>
-			<option value="3">x-Calabresa</option>
-			<option value="4">x-Tudo</option>
-			<option value="5">x-Cheddar</option>
-			<option value="6">x-Chicken</option>
-			<option value="7">Combo Master</option>		
-		</select>		
-	</div>	
-	<div id="Pedido"></div>	
-	</div>
-	<script type="text/javascript" src="js/script.js"></script>
+
+    <div class="container">
+        <h1>Cardápio JavaScript</h1>
+        <p>Escolha seu Pedido</p>
+        <div class="menu">
+            <select class="select" name="" id="SelectOption">
+				<option value="0" hidden>Selecione seu pedido</option>
+				<option value="tradicional">Tradicional</option>
+				<option value="xbacon">x-Bacon</option>
+				<option value="xcalabresa">x-Calabresa</option>
+				<option value="xtudo">x-Tudo</option>
+				<option value="xcheddar">x-Cheddar</option>
+				<option value="xchicken">x-Chicken</option>
+				<option value="combo">Combo Master</option>		
+			</select>
+        </div>
+
+        <div class="Pedido">
+            <div id="tradicional">
+                <span>Tradicional</span>
+                <button href="https://api.whatsapp.com/send?phone=551991737267&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%20do%20Hamburguer%20Tradcional">Faça seu pedido</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, recusandae officia iste deleniti.</p>
+                <img src="img/tradicional.png">
+            </div>
+
+            <div id="xbacon" class="active">
+                <span>x-Bacon</span>
+                <button href="https://api.whatsapp.com/send?phone=551991737267&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%20do%20x-Bacon">Faça seu pedido</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, recusandae officia iste deleniti.</p> <img src="img/xbacon.png">
+            </div>
+
+            <div id="xcalabresa" class="active">
+                <span>x-Calabresa</span>
+                <button href="https://api.whatsapp.com/send?phone=551991737267&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%20do%20x-Calabresa">Faça seu pedido</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, recusandae officia iste deleniti.</p>
+                <img src="img/xcalabresa.png">
+            </div>
+
+            <div id="xtudo" class="active">
+                <span>x-Tudo</span>
+                <button href="https://api.whatsapp.com/send?phone=551991737267&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%20do%20x-Tudo">Faça seu pedido</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, recusandae officia iste deleniti.</p>
+                <img src="img/xtudo.png">
+            </div>
+
+            <div id="xcheddar" class="active">
+                <span>x-Cheddar</span>
+                <button href="https://api.whatsapp.com/send?phone=551991737267&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%20do%20x-Cheddar">Faça seu pedido</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, recusandae officia iste deleniti.</p>
+                <img src="img/xcheddar.png">
+            </div>
+
+            <div id="xchicken" class="active">
+                <span>x-Chicken</span>
+                <button href="https://api.whatsapp.com/send?phone=551991737267&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%20do%20x-Chicken">Faça seu pedido</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, recusandae officia iste deleniti.</p>
+                <img src="img/xchiken.png">
+            </div>
+
+            <div id="combo" class="active">
+                <span>Super Combo </span>
+                <button href="https://api.whatsapp.com/send?phone=551991737267&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%20do%20Super%20combo">
+					Faça seu pedido
+				</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, recusandae officia iste deleniti.</p>
+                <img src="img/combo.png">
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </body>
+
 </html>
